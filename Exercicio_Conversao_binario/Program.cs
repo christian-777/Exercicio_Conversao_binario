@@ -10,7 +10,7 @@
         Console.WriteLine("digite um numero: ");
         num = int.Parse(Console.ReadLine());
 
-        converte(num);
+        Converte(num);
 
         for(int j = 0; j < converted.Length; j++)
         {
@@ -18,14 +18,14 @@
         }
 
 
-        int converte(int x)
+        int Converte(int x)
         {
             if (x > 0)
             {
                 converted[i] = x % 2;
                 int r = x / 2;
                 i--;
-                return converte(r);
+                return Converte(r);
             }
             return 0;
         }
