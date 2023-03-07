@@ -10,12 +10,11 @@
         Console.WriteLine("digite um numero: ");
         num = int.Parse(Console.ReadLine());
 
-        zera();
         converte(num);
 
-        for(int j = 0; j <8; j++)
+        for(int j = 0; j < converted.Length; j++)
         {
-            Console.Write(converted[j]+"-");
+            Console.Write(converted[j]);
         }
 
 
@@ -28,15 +27,7 @@
                 i--;
                 return converte(r);
             }
-            return 1;
-        }
-
-        void zera()
-        {
-            for(int i=0; i<8; i++)
-            {
-                converted[i] = 0;
-            }
+            return 0;
         }
     }
 }
